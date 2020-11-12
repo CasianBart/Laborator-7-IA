@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Narcis.png" style="width:50%">
+  <img class="mySlides" src="Manolache Bogdan.jpg" style="width:50%">
+  <img class="mySlides" src="thomas.jpg" style="width:50%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<h1>CATALOG</h1>
+
+<img src="Captură1.PNG" alt="" width="300" height="300">
+
+<p><a href="file:///C:/Users/valer/Desktop/exercitiu%202/Fisa%20laborator%205%20Manolache%20Bogdan..html">Manolache Bogdan</a></p>
+<p><a href="file:///C:/Users/valer/Desktop/exercitiu%202/Profil%20Cop%C4%83cel%20Narcis-Mihail.html">Copacel Narcis Mihail</a></p>
+<p><a href="file:///C:/Users/valer/Desktop/exercitiu%202/Profil.html">Bontya Thomas</a></p>
+</body>

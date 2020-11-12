@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style1.css">
+</head>
+<style> 
+body {
+ background-color: lightblue ;
+  color: gray;
+}
+h1  {
+  color: white;
+  margin-left: 800px;
+  border: 1px solid black;
+ 
+} 
+img {
+  border-radius: 20px;
+  opacity: 0.8;
+  border: 15px solid #556;
+  border-radius: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+  background-color: lightgray ;
+}
+</style>
+</head>
+<script>
+function myFunction() {
+  document.getElementById("Titlu").innerHTML = "Dr. Ing Bart Casian";
+  
+  document.getElementById('poza').src="Eu1.PNG";
+  
+  document.getElementById("poza").style.opacity="0.5";
+  document.body.style.background = "black";
+  document.getElementById("hobby1").innerHTML = "De realizat:";
+  document.getElementById("hobby2").innerHTML = "Intership";
+  document.getElementById("hobby3").innerHTML = "Tedtalk";
+  document.getElementById("hobby4").innerHTML = "idk";
+
+
+}
+
+
+function varsta()
+{
+  var azi=new Date;
+  var VarstaMea;
+
+  var nasc=document.getElementById('varsta').innerHTML;
+  var curent=azi.getFullYear();
+
+  VarstaMea=curent-parseInt(nasc);
+  document.getElementById("varsta").innerHTML=VarstaMea;
+
+}
+</script>
+
+<html>
+<body>
+
+<h1 id="Titlu" >Bart Casian Ilie</h1>
+<p> MAIL: casianbart6@gmail.com</p>
+<p> DOMICILIU: Jud. BN, Sat.Dealu Stefanitei(Com.Romuli) nr. 23 </p>
+<p> DATA NASTERII: 10.10.2000 </p>
+<p onmouseover="varsta()" id="varsta">2000</p>
+<p> FACULTATE: Facultatea de Electronică, Telecomunicații și Tehnologia Informației </p>
+<img id="poza" src="Captură.PNG" alt="" width="300" height="300">
+
+
+
+<p>Discipline:</p>
+<table style="width:25%">
+  <tr>
+  
+    <th>ANUL</th>
+    <th>LINK</th>
+  </tr>
+  <tr>
+ 
+    <td>Anul 1</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf ">1.Analiza matematica </a></p></td>
+  </tr>
+  <tr>
+  
+    <td>Anul 1</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf ">2.Algebra liniara </a></p></td>
+  </tr>
+  <tr>
+  
+    <td>Anul 1</td>
+    <td><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf ">3.Informatica aplicata </a></p></td>
+  </tr>
+</table>
+
+
+<p  id="hobby1" >Hobby-urile mele sunt:</p>
+<p  id="hobby2" >-Fotografie</p>
+<p  id="hobby3" >-Muzica</p>
+<p  id="hobby4" >-Sport</p>
+
+
+<button type="button" onclick="myFunction()">Alta viata</button>
+
+
+</body>
+</html>
